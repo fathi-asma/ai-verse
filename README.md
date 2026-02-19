@@ -1,6 +1,6 @@
 <div align="center">
   <a href="https://a-i-verse.netlify.app/" target="_blank"><img src="README/main.png" alt="AI Verse - Explore AI Tools" width="200"></a>
-  <h1>🌌 AI Verse</h1>
+  <h1>AI Verse</h1>
   <p><strong>Your Gateway to the AI Universe</strong></p>
   <p>
     <a href="https://a-i-verse.netlify.app/" target="_blank">🚀 Live Demo</a> •
@@ -16,7 +16,7 @@
 
 **AI Verse** is a curated directory and discovery platform that helps you navigate the rapidly evolving world of Artificial Intelligence tools. Whether you're a developer looking for code assistants, a creator seeking design tools, a student exploring AI learning resources, or an entrepreneur searching for productivity solutions, AI Verse simplifies your search.
 
-With over **45+ hand-picked AI tools** organized into intuitive categories, powerful search capabilities, and detailed pricing information, AI Verse is your one-stop destination to discover, compare, and explore the best AI tools available today.
+With over **85+ hand-picked AI tools** organized into intuitive categories, powerful search capabilities, and detailed pricing information, AI Verse is your one-stop destination to discover, compare, and explore the best AI tools available today.
 
 ---
 
