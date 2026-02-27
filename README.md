@@ -25,10 +25,13 @@ With over **85+ hand-picked AI tools** organized into intuitive categories, powe
 ## ✨ Key Features
 
 - 🔍 **Smart Search & Filter** - Find the perfect AI tool using keywords, categories, or pricing tiers
+- ❤️ **Personalized Favorites** - Save your most-used AI tools to a personal favorites list for quick access
+- 💾 **Local Persistence** - Favorites are securely saved to your browser's local storage (no login required)
+- 🔔 **Real-time Notifications** - Get instant feedback with toast notifications when managing your tools
 - 🎨 **10+ Categories** - Organized by use case:
   - Text & Writing | Coding & Dev | Image Generation
   - Video & Animation | Audio & Voice | Research & Analysis
-  - Productivity | Design | Marketing | Gaming | 3D & AR/VR | Education
+  - Productivity | Design | Marketing | 3D & AR/VR
 - 💰 **Pricing Transparency** - Clearly marked pricing models (Free, Freemium, Paid)
 - 🌓 **Dark/Light Theme Support** - Beautiful UI that works in any light condition
 - 📱 **Fully Responsive** - Seamless experience on desktop, tablet, and mobile
@@ -119,7 +122,8 @@ ai-verse/
 - **Frontend Framework:** React 18+
 - **Build Tool:** Vite (ultra-fast bundler)
 - **Styling:** CSS3 with theme support
-- **Data Format:** JSON (no database required)
+- **Feedback:** React Toastify (elegant notification system)
+- **Data Format:** JSON & LocalStorage (no backend database required)
 - **Deployment:** Netlify (connected to main branch)
 
 ---
@@ -196,8 +200,8 @@ Or use a single logo for both by using the same path for both `dark` and `light`
 
 ## 📊 Statistics
 
-- **45+** AI Tools
-- **13+** Categories
+- **85+** AI Tools
+- **10+** Categories
 - **3** Pricing Models
 - **100%** Responsive Design
 
