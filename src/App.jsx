@@ -46,8 +46,6 @@ function sortToolsByName(tools) {
   return [...tools].sort((a, b) => a.name.localeCompare(b.name));
 }
 
-
-
 function checkMode(tool, selectedPricingModes) {
   if (selectedPricingModes.length === 0) return true; // no filter applied
 
@@ -58,7 +56,6 @@ function checkMode(tool, selectedPricingModes) {
   return selectedPricingModes.includes(pricing);
 }
 
-
 let favourite_tools_ids = getFavouriteToolsFromLocalStorage();
 
 function addFavouriteToolFromArr(tool_id) {
@@ -68,8 +65,6 @@ function addFavouriteToolFromArr(tool_id) {
 function removeFavouriteToolFromArr(tool_id) {
   favourite_tools_ids = favourite_tools_ids.filter((favourite_tools_id) => favourite_tools_id !== tool_id);
 }
-
-
 
 function App() {
   const { theme } = useTheme();
@@ -102,7 +97,7 @@ function App() {
       </div>
 
 
-      <div className="search-container">
+      <div className="filters-container">
         <input
           type="search"
           placeholder="Search AI Verse..."
@@ -123,10 +118,10 @@ function App() {
         <div className='favourite-btn-filter-container'>
           {
             (isFavouriteFilter) ? (
-              <button onClick={() => { setIsFavouriteFilter(!isFavouriteFilter) }} className='favourite-btn'><img src={heart_red} alt="heart red" className='favourite-btn-icon' /></button>
+              <button onClick={() => { setIsFavouriteFilter(!isFavouriteFilter) }} className='favourite-btn-filter'><img src={heart_red} alt="heart red" className='favourite-btn-filter-icon' /></button>
             ) : (
-              <button onClick={() => { setIsFavouriteFilter(!isFavouriteFilter) }} className='favourite-btn'>{
-                theme === "dark" ? <img src={heart_black} alt="heart black" className='favourite-btn-icon' /> : <img src={heart_white} alt="heart white" className='favourite-btn-icon' />
+              <button onClick={() => { setIsFavouriteFilter(!isFavouriteFilter) }} className='favourite-btn-filter'>{
+                theme === "dark" ? <img src={heart_black} alt="heart black" className='favourite-btn-filter-icon' /> : <img src={heart_white} alt="heart white" className='favourite-btn-filter-icon' />
               }</button>
             )
           }
