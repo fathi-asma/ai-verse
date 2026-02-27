@@ -48,7 +48,7 @@
 }
 
 .favourite-btn:hover .favourite-btn-icon {
-    content: url("../assets/heart-red.png");
+    content: url("../assets/heart-hover.png");
 }
 
 
