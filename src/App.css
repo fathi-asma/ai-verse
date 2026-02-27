@@ -1,5 +1,4 @@
-.search-container {
-    width: 100%;
+.filters-container {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -11,12 +10,12 @@
     display: flex;
     text-align: center;
     color: var(--color-text);
-    font-size: 0.75rem;
+    font-size: 0.65rem;
     font-weight: 600;
     justify-content: center;
 }
 
-.ai-tools-count p{
+.ai-tools-count p {
     background-color: var(--color-surface);
     width: fit-content;
     padding: 5px;
@@ -30,9 +29,9 @@
 .search-entry {
     width: 50%;
     height: 2.625rem;
-    font-size: 0.975rem;
+    font-size: 0.9rem;
     padding: 7.5px;
-    border: 2px solid var(--color-border);
+    border: 1px solid var(--color-border);
     border-radius: 6px;
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -49,12 +48,12 @@
     /* remove default outline */
 }
 
-.search-container select {
+.filters-container select {
     width: fit-content;
     height: 2.625rem;
-    font-size: 0.975rem;
+    font-size: 0.8rem;
     padding: 7.5px;
-    border: 2px solid var(--color-border);
+    border: 1px solid var(--color-border);
     border-radius: 6px;
     background-color: var(--color-bg);
     color: var(--color-text);
@@ -63,12 +62,41 @@
     transition: box-shadow 0.3s ease;
 }
 
-.search-container select:focus {
+.filters-container select:focus {
     box-shadow: 0 4.5px 7.5px var(--shadow-color);
     /* Optional: shadow when input is focused */
     outline: none;
     /* remove default outline */
 }
+
+.favourite-btn-filter-container {
+    margin-top: 4px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    width: fit-content;
+}
+
+.favourite-btn-filter {
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.favourite-btn-filter:hover {
+    transform: scale(1.05);
+}
+
+.favourite-btn-filter:hover .favourite-btn-filter-icon {
+    content: url("./assets/heart-red.png");
+}
+
+.favourite-btn-filter-icon {
+    width: 22px;
+    height: 22px;
+}
+
 
 .ai-mode-container {
     margin-top: 15px;
@@ -88,7 +116,6 @@
     border-radius: 6px;
     transition: all 0.3s ease;
     user-select: none;
-    font-size: 0.975rem;
 }
 
 .ai-mode-container label:hover {
@@ -110,14 +137,14 @@
 }
 
 .no-tools-found p {
-    font-size: 1rem;
+    font-size: 0.8rem;
     font-weight: 600;
     color: var(--color-muted);
     text-align: center;
 }
 
 .ai-mode-container label {
-    font-size: 1rem;
+    font-size: 0.8rem;
     color: var(--color-text);
 }
 
@@ -180,18 +207,18 @@
     }
 
     .search-entry {
-        width: 50%;
+        width: 40%;
         height: 2.25rem;
         font-size: 0.75rem;
     }
 
-    .search-container select {
+    .filters-container select {
         font-size: 0.75rem;
         height: 2.25rem;
     }
 
     .ai-tools-count {
-        font-size: 0.6rem;
+        font-size: 0.55rem;
     }
 
     .ai-mode-container label {

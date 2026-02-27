@@ -2,10 +2,10 @@
     background-color: var(--color-card);
     border-radius: 6px;
     box-shadow: 0 3px 6px var(--color-card);
-    margin: 15px;
+    margin: 10px;
     padding: 0 15px 15px 15px;
-    width: 150px;
-    height: 300px;
+    width: 130px;
+    height: 270px;
     transition: transform 0.3s ease;
     display: flex;
     flex-direction: column;
@@ -26,6 +26,7 @@
 .favourite-btn-icon {
     padding-top: 10px;
     width: 20px;
+    height: 20px;
 }
 
 .favourite-btn-container-mobile {
@@ -35,19 +36,28 @@
 .favourite-btn {
     width: 20px;
     height: 20px;
-    border-radius: 50%;
     border: none;
     cursor: pointer;
-    font-size: 1.2rem;
     background-color: transparent;
-    color: var(--color-text);
+    transition: all 0.3s ease;
 }
+
+
+.favourite-btn:hover {
+    transform: scale(1.05);
+}
+
+.favourite-btn:hover .favourite-btn-icon {
+    content: url("../assets/heart-red.png");
+}
+
+
 
 /* --- Image Section --- */
 .image-container {
     text-align: center;
     width: 100%;
-    height: 112.5px;
+    height: 100px;
     /* Fixed height for consistent sizing */
     flex-shrink: 0;
     /* Prevents shrinking due to text length */
@@ -65,14 +75,14 @@
 
 /* --- Text Section --- */
 .ai-card .name {
-    font-size: 1.125em;
+    font-size: 0.85rem;
     margin-top: 7.5px;
     color: var(--color-text);
     text-align: center;
 }
 
 .ai-card .description {
-    font-size: 0.75em;
+    font-size: 0.7rem;
     color: var(--color-muted);
     text-align: center;
     margin: 3.75px 7.5px 0 7.5px;
@@ -81,49 +91,60 @@
 /* --- Link Reset --- */
 a {
     text-decoration: none;
-    /* removes underline */
     color: inherit;
-    /* keeps text color */
 }
 
-/* --- Responsive (Mobile) --- */
 @media (max-width: 600px) {
+
     .ai-card {
         box-sizing: border-box;
         width: 100%;
-        height: fit-content;
+        height: auto;
         display: flex;
         flex-direction: row;
         align-items: center;
-        padding: 7.5px;
-        margin: 7.5px 0px;
+        padding: 7px;
+        padding-right: 14px;
+        margin: 7.5px 0;
+        gap: 10px;
     }
 
     .image-container {
-        height: 55px;
-        width: 55px;
+        width: 45px;
+        height: 45px;
         flex-shrink: 0;
+        order: 1;
     }
 
     .ai-card .ai-image {
         width: 100%;
         height: 100%;
-        margin: 0;
         object-fit: contain;
+        margin: 0;
+    }
+
+    /* Name - fixed width */
+    .name-container {
+        width: 80px;
+        flex-shrink: 0;
+        order: 2;
     }
 
     .ai-card .name {
-        font-size: 0.75rem;
-        color: var(--color-text);
+        font-size: 0.675rem;
+        margin: 0 0 0 5px;
         text-align: left;
-        margin: 0 0 0 10px;
+    }
+
+    .description-container {
+        flex: 1;
+        order: 3;
     }
 
     .ai-card .description {
+        font-size: 0.6rem;
+        margin: 0 0 0 5px;
         text-align: left;
-        margin-left: 15px;
-        font-size: 0.65;
-        font-weight: lighter;
     }
 
     .favourite-btn-container {
@@ -131,9 +152,15 @@ a {
     }
 
     .favourite-btn-container-mobile {
-        padding-right: 10px;
-        display: block;
+        display: flex;
+        flex-shrink: 0;
+        order: 4;
+        margin-left: auto;
     }
 
-
+    .favourite-btn-icon {
+        width: 15px;
+        height: 15px;
+        padding: 0;
+    }
 }
